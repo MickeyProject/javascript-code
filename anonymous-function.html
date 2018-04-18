@@ -1,0 +1,17 @@
+<script>
+  function doCalc(num1, num2, calcFunc){
+    return calcFunc(num1, num2);
+  }
+
+  function addFunc(n1, n2){
+    return n1 + n2;
+  }
+
+  var output = doCalc(5, 10, addFunc);
+  var output2 = doCalc(5, 10, function(n1, n2){
+    return n1 * n2;
+  });
+
+  console.log(output);
+  console.log(output2);
+</script>
